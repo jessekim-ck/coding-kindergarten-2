@@ -4,7 +4,7 @@ prime_numbers = list()
 
 for i in range(2, 10001):
     flag = True
-    for j in range(2, i):
+    for j in prime_numbers:
         if i % j == 0:
             flag = False
             break

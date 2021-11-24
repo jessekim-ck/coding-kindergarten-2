@@ -1,7 +1,7 @@
 # x를 y로 나눈 몫과 나머지 구하기
 
-x = 38
-y = 5
+x = int(input("X: "))
+y = int(input("Y: "))
 
 quotient = 0
 while True:
