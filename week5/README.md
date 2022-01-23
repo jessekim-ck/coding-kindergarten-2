@@ -9,7 +9,7 @@
 - `numpy`: The fundamental package for scientific computing with Python
 - `matplotlib`: Visualization with Python
 
-### pandas
+### [pandas](https://pandas.pydata.org/)
 데이터를 분석하고, 가공하기 위한 파이썬 패키지
 - DataFrame
 - read_excel
@@ -20,7 +20,7 @@
 - concat
 - to_excel
 
-### numpy
+### [numpy](https://numpy.org/)
 대규모 벡터와 행렬을 포함한 수학적인 연산을 위한 파이썬 패키지
 - array
 - 기본 연산: sum, mean, min, max, ...
@@ -28,7 +28,7 @@
 - 행렬 연산
 - reshape, transpose
 
-### matplotlib
+### [matplotlib](https://matplotlib.org/)
 데이터 및 이미지 시각화를 위한 파이썬 패키지
 - 이미지 불러오기
 - 이미지 시각화하기
