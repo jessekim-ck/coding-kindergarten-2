@@ -13,10 +13,12 @@
 데이터를 분석하고, 가공하기 위한 파이썬 패키지
 - DataFrame
 - read_excel
-- to_excel
+- indexing
+- filter
 - sort
 - loc, iloc
 - concat
+- to_excel
 
 ### numpy
 대규모 벡터와 행렬을 포함한 수학적인 연산을 위한 파이썬 패키지
