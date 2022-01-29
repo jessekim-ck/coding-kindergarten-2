@@ -1,10 +1,8 @@
 # https://www.acmicpc.net/problem/4673
 
 def d(n):
-    out = n
-    for i in str(n):
-        out += int(i)
-    return out
+    for i in str(n): n += int(i)
+    return n
 
 a = 10000
 self_numbers = list(range(1, a + 1))
