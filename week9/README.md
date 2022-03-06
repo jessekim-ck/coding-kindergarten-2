@@ -54,7 +54,7 @@ $$
 즉 간단히 말하자면 학습 데이터에 대해 오차값을 최소화하는 것이 목표이다! 다시 말해 **$L = f(x, \theta)$ 를 최소화하는 $\theta$ 를 찾는 것이 목표**이다. 어디서 많이 본 형태인 것 같다. 여러가지 가정이 필요하긴 하지만, 다음을 만족하는 $\theta$를 찾으면 되는 것이다!
 
 $$
-\frac{\partial{E}}{\partial{\theta}} = 0
+\frac{\partial{L}}{\partial{\theta}} = 0
 $$
 
 ### 3.2. 경사하강법(Gradient Descent Method)
@@ -63,7 +63,7 @@ $$
 이러한 상황에서 최적해를 근사하기 위해 고안된 방법이 바로 경사하강법이다. 간단히 말하자면, **매 데이터의 배치마다 기울기가 가장 가파른 방향으로 (오차를 가장 가파르게 감소시키는 방향으로) 파라미터들을 조금씩 업데이트하는 것!** 즉 식으로 나타내보자면...
 
 $$
-\theta_i = \theta_i - \eta \frac{\partial f}{\partial \theta_i}
+\theta_i = \theta_i - \eta \frac{\partial L}{\partial \theta_i}
 $$
 
 를 매 배치마다, 모든 파라미터에 대해서 진행해주는 것이다. 이 때 $\eta$ 를 learning rate(학습률)이라 부른다. 그러면 이론상 파라미터 값들은 오차값을 조금씩 감소시키는 방향으로 계속 학습될 것이다!!
@@ -116,7 +116,7 @@ $$
 딥러닝 모델은 각 layer 계산들의 합성함수이다. 이에 입각하여 연쇄법칙을 적용해보자. 이 때 $l_k$ layer의 출력값을 $a_k$ 라고 하자.
 
 $$
-y = a_3 = l_3(l_2(l_2(x, \theta_1), \theta_2), \theta_3)
+y = a_3 = l_3(l_2(l_1(x, \theta_1), \theta_2), \theta_3)
 \\ \ \\
 \frac{\partial{y}}{\partial{a_3}} = 
 \frac{\partial{a_3}}{\partial{a_3}} = 
@@ -155,7 +155,6 @@ f(x) = xW + b
 \frac{\partial{f(x)}}{\partial{W}} = x^T
 \\ \ \\
 \frac{\partial{f(x)}}{\partial{b}} = 1
-
 $
 
 #### 4.3.3. ReLU 미분
