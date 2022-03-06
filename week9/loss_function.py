@@ -1,3 +1,4 @@
+import numpy as np
 
 
 def mean_squared_loss(y, t):
@@ -8,8 +9,7 @@ def mean_squared_loss(y, t):
     Output
         loss: scalar 값
     """
-    # TODO: 구현하세요!
-    pass
+    return np.sum((y - t)**2) / y.shape[0] / 2
 
 
 def cross_entropy_loss(y, t):
@@ -20,5 +20,4 @@ def cross_entropy_loss(y, t):
     Output
         loss: scalar 값
     """
-    # TODO: 구현하세요!
-    pass
+    return -np.sum(t*np.log(y + 1e-8)) / y.shape[0]
