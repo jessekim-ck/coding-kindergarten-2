@@ -143,6 +143,8 @@ $$
 ### 4.2. 계산 그래프
 이를 계산 그래프를 이용하여 더 알기 쉽게 표현해볼 수 있다.
 
+![back propagtion graph](./back_prop.jpeg)
+
 ### 4.3. 미분 계산
 #### 4.3.1. Affine layer의 미분
 $
@@ -153,6 +155,7 @@ f(x) = xW + b
 \frac{\partial{f(x)}}{\partial{W}} = x^T
 \\ \ \\
 \frac{\partial{f(x)}}{\partial{b}} = 1
+
 $
 
 #### 4.3.3. ReLU 미분
