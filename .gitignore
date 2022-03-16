@@ -2,3 +2,4 @@
 *.xlsx
 *.csv
 *.DS_Store
+!*.png
