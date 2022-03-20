@@ -17,7 +17,7 @@
 - 8주차: 퍼셉트론과 신경망
 - 9주차: 신경망의 학습
 - 10주차: Convolutional Neural Network
-- 11주차: TBD
+- 11주차: Recap & 실전 트렌드
 
 ### 딥러닝 실습
 - 12주차: Pytorch tutorial
