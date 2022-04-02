@@ -2,4 +2,6 @@
 *.xlsx
 *.csv
 *.DS_Store
+week12/fashion_mnist
 !*.png
+__pycache__
