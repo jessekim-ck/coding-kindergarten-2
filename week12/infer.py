@@ -1,5 +1,5 @@
 from data import get_train_data_loader
-from model import FashionClassifier
+from model import FashionClassifier, EfficientNet
 
 
 def infer():
@@ -7,6 +7,10 @@ def infer():
     x, y = next(iter(data_loader))
 
     model = FashionClassifier()
+    # model = EfficientNet.from_name(
+    #     "efficientnet-b0",
+    #     num_classes=10
+    # )
     y_ = model(x)  # equiv. to `model.forward(x)`
 
     print(y_)
