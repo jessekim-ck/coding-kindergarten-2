@@ -20,8 +20,8 @@
 - 11주차: Recap & 실전 트렌드
 
 ### 딥러닝 실습
-- 12주차: Pytorch tutorial
-- 13주차: food-101 challenge
+- 12 & 13주차: Pytorch tutorial
+- 14 & 15주차: food-101 challenge
 
 ### 딥러닝 프로젝트
 - TBD
